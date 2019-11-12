@@ -13,3 +13,11 @@ Use the following guidlines as reminders for your submissions.
 - Use ES6 as the primary javascript target.
 - All scripts should be linted before submission.
 - When specified, `.ts` files should be compiled to `.js`.
+
+DAVID EDIT:
+to run each file, go into week2 in terminal and Run:
+
+node arrays-and-loops.js
+node object-literal.js
+
+P.S. I am still a bit confused about linting so I tried my best to do what you asked, could we go over this on Thursday?
