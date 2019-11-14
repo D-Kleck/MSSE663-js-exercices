@@ -2,10 +2,12 @@
 
 ## Included files
 
-| File Name   | Description                                  |
-| ----------- | -------------------------------------------- |
-| app.ts      | main app file where source code will live    |
-| app.spec.ts | main app test file where test code will live |
+| File Name           | Description                                  |
+| ------------------- | -------------------------------------------- |
+| app.ts              | main app file where source code will live    |
+| app.spec.ts         | main app test file where test code will live |
+| observables.ts      | app file where test code will live           |
+| observables.spec.ts | app test file where test code will live      |
 
 ### In `app.ts`:
 
@@ -19,7 +21,15 @@
 
 3 Make a new instance of your class that calls your methods and outputs a result.
 
-### In `app.spec.ts`:
+### In `observables.ts`:
+
+1 Create an observable stream of an array (utilizing the `of` keyword).
+
+2 Map over the values in the array.
+
+3 Subscribe and ouput values to the concole.
+
+### In `spec` files:
 
 1 Describe what you want to test.
 
