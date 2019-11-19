@@ -1,23 +1,20 @@
 import { expect } from 'chai';
 import 'mocha';
-import { Party } from './app';
+import { Party, Guest} from './app';
 
 describe('Test for app.ts', () => {
     const guest = new Party('John', 30, 'Bill', 'Jerry');
 
-    it('should return true', () => {
-        expect(guest.isAdult()).to.equal(true);
+
+    it('isAdult()', () => {
+        expect(guest.isAdult()).to.be.true;
     });
 
-    it('should return true', () => {
-        expect(guest.getAge()).to.equal(true);
-    });
-
-    it('should return Bill', () => {
-        expect(guest.getPlus1()).to.equal('John');
+    it('getAge()', () => {
+        expect(guest.getAge()).to.be.true;
     });
 
     it('should return an array of Bill and Jerry', () => {
-        expect(guest.getPluses()).to.equal('Bill');
+        expect(guest.getPluses()).to.eql(['Bill','Jerry']);
     });
 });
