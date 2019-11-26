@@ -4,17 +4,21 @@ export const numbers = [1, 2, 3, 4, 5];
 export const originalNumbers = numbers.map(number => number);
 console.log(originalNumbers);
 
-// refactor here
 
+// refactor here
+export const spreadNumbers = [...numbers];
 // #2 Combining arrays
 export const winners = ['first'];
 export const runnerUps = ['second', 'third', 'fourth', 'fifth'];
+export const runnerUps2 = ['second', 'third', 'fourth', 'fifth'];
 
 export const originalContenders = runnerUps.unshift(winners[0]);
+console.log("orignalContenders");
 console.log(originalContenders);
 
-// refactor here
 
+// refactor here
+export const spreadContenders = [winners, ...runnerUps2];
 // #3 Combining objects
 export const bob = {
   man: 'Bob'
@@ -25,8 +29,10 @@ export const kyle = {
 };
 
 export const originalPersons = Object.assign(bob, kyle);
-
 // refactor here
+export const spreadPersons = {...bob, ...kyle};
+
+
 
 // #4 Modifying values in arrays of objects
 export const data = [
@@ -56,4 +62,9 @@ export const originalUpdates = data.map(task => {
   return task;
 });
 
-// refactor here
+export const spreadUpdates = data.map(task => {
+  if (task.id === update.id) {
+    return {...task, ...update};
+  }
+  return task;
+});
