@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {source, data} from './observable';
 import { expect } from 'chai';
 import 'mocha';
@@ -9,3 +10,7 @@ describe('Testing datastream', () => {
 		});
 	});
 })
+=======
+import { expect } from 'chai';
+import 'mocha';
+>>>>>>> instructions update
