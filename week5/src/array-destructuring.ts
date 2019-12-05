@@ -1,9 +1,12 @@
 // #1 Variable swapping
 export const fruits = ['apple', 'banana'];
 
+export const [a, b] = fruits;
+
 // Currently, I would get the following returns:
 console.log(a); // 'apple'
 console.log(b); // 'banana'
+
 
 // deconstruct here
 
@@ -14,13 +17,21 @@ console.log(b); // 'apple';
 // #2 Variables and Rest
 export const food = ['apple', 'banana', 'chocolate', 'pears', 'oats', 'pizza'];
 
+export const [a1, b1, ...others] = food;
+
+
+
 // deconstruct here
 
-console.log(a); // 'apple'
-console.log(b); // 'banana'
+console.log(a1); // 'apple'
+console.log(b1); // 'banana'
 console.log(others); // ['chocolate, 'pears', 'oats', 'pizza']
 
 // #3 Array: Contruct a statement
-['hello', 'taylor'];
+const [x, y] = ['hello', 'taylor'];
+
+
+export const statement = x + ', ' + y;
+
 
 // 'hello, taylor!'
