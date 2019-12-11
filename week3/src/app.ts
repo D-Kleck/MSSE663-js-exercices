@@ -19,6 +19,10 @@ export class Party implements Guest {
         this.plus2 = plus2;
         this.extras = Array<string>(plus1, plus2);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 85482873629c5cc19f831acf46ad8a8fdae0d352
     }
 
     getAge(): boolean {
